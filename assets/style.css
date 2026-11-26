@@ -24,6 +24,15 @@ header {
   padding-bottom: var(--space-8);
 }
 
+header h1 {
+  margin: 0;
+}
+
+.pronounce {
+  margin: var(--space-3) 0 0;
+  color: var(--ink-muted);
+}
+
 .lockup {
   display: block;
   height: 72px;
@@ -43,21 +52,8 @@ header {
   margin-bottom: var(--space-12);
 }
 
-.about h1 {
-  margin: 0 0 var(--space-6);
-}
-
 .about p {
   margin: 0 0 var(--space-4);
-}
-
-.work {
-  margin: var(--space-6) 0 0;
-  padding-left: var(--space-6);
-}
-
-.work li + li {
-  margin-top: var(--space-2);
 }
 
 main > h2 {
