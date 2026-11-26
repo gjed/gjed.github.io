@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>gjed</title>
+    <meta name="description" content="Projects gjed publishes on GitHub Pages.">
+    <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon-180.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap">
+    <link rel="stylesheet" href="assets/brand/tokens.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script>
+      // tokens.css switches on data-theme; follow the system preference.
+      const dark = matchMedia("(prefers-color-scheme: dark)");
+      const apply = () => document.documentElement.dataset.theme = dark.matches ? "dark" : "light";
+      apply();
+      dark.addEventListener("change", apply);
+    </script>
+  </head>
+  <body>
+    <header>
+      <picture>
+        <source srcset="assets/brand/gjed-lockup-dark.svg" media="(prefers-color-scheme: dark)">
+        <img class="lockup" src="assets/brand/gjed-lockup.svg" alt="gjed">
+      </picture>
+    </header>
+    <hr class="horizon">
+    <main>
+      <p class="body lede">Small, maintained tools I publish on GitHub Pages.</p>
+      <ul class="projects">
+{{projects}}
+      </ul>
+    </main>
+    <footer class="small">
+      <a href="https://github.com/gjed">github.com/gjed</a>
+    </footer>
+  </body>
+</html>

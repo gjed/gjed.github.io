@@ -1,0 +1,79 @@
+/* gjed — generated from tokens.json */
+:root, [data-theme="light"] {
+  --sea: #1f3a4d;
+  --accent: #55305f;
+  --mark-shade: #55305f;
+  --mark-light: #c990e0;
+  --surface: #f4f1ea;
+  --surface-raised: #fbf9f4;
+  --sea-soft: #dce5ea;
+  --ink: #13181d;
+  --ink-muted: #4f5b66;
+  --hairline: #d6cfc2;
+  --on-sea: #f4f1ea;
+  --on-accent: #f4f1ea;
+  --focus-ring: #55305f;
+  --brand-plum: #55305f;
+  --brand-orchid: #c990e0;
+  --brand-plum-mid: #8a57a0;
+  --brand-lilac: #f1ddf7;
+  --brand-plum-deep: #3a2a45;
+  --brand-sea: #1f3a4d;
+  --brand-sea-light: #8fb4c8;
+  --brand-vellum: #f4f1ea;
+  --brand-ink: #13181d;
+}
+[data-theme="dark"] {
+  --sea: #8fb4c8;
+  --accent: #c990e0;
+  --mark-shade: #8a57a0;
+  --mark-light: #c990e0;
+  --surface: #13181d;
+  --surface-raised: #1a2127;
+  --sea-soft: #1e3140;
+  --ink: #ece6da;
+  --ink-muted: #a3adb5;
+  --hairline: #2e3740;
+  --on-sea: #13181d;
+  --on-accent: #13181d;
+  --focus-ring: #c990e0;
+  --brand-plum: #55305f;
+  --brand-orchid: #c990e0;
+  --brand-plum-mid: #8a57a0;
+  --brand-lilac: #f1ddf7;
+  --brand-plum-deep: #3a2a45;
+  --brand-sea: #1f3a4d;
+  --brand-sea-light: #8fb4c8;
+  --brand-vellum: #f4f1ea;
+  --brand-ink: #13181d;
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-24: 96px;
+  --radius-sm: 3px;
+  --radius-md: 6px;
+  --radius-tile: 22%;
+  --logo-min-mark: 24px;
+  --logo-min-mark-small: 16px;
+  --logo-min-lockup: 20px;
+  --logo-clearspace: 25%;
+  --logo-perch-weight: 3.75%;
+  --font-display: "Newsreader", "Source Serif 4", Georgia, serif;
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+.wordmark { font-family: var(--font-display); font-size: 96px; line-height: 0.95; font-weight: 500; letter-spacing: -0.01em; }
+.title { font-family: var(--font-display); font-size: 48px; line-height: 52px; font-weight: 500; letter-spacing: -0.01em; }
+.h1 { font-family: var(--font-display); font-size: 34px; line-height: 42px; font-weight: 500; }
+.h2 { font-family: var(--font-display); font-size: 26px; line-height: 34px; font-weight: 500; }
+.h3 { font-family: var(--font-sans); font-size: 18px; line-height: 26px; font-weight: 600; }
+.body { font-family: var(--font-sans); font-size: 16px; line-height: 26px; font-weight: 400; }
+.small { font-family: var(--font-sans); font-size: 14px; line-height: 22px; font-weight: 400; }
+.code { font-family: var(--font-mono); font-size: 14px; line-height: 22px; font-weight: 400; }
+.label { font-family: var(--font-mono); font-size: 12px; line-height: 16px; font-weight: 400; letter-spacing: 0.02em; }
