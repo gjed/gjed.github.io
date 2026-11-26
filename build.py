@@ -37,6 +37,17 @@ def pages_repos():
     ]
 
 
+def ordered(repos):
+    lines = (ROOT / "projects.txt").read_text().splitlines()
+    order = [line.strip() for line in lines if line.strip() and not line.startswith("#")]
+    names = {r["name"] for r in repos}
+    for name in order:
+        if name not in names:
+            print(f"warning: projects.txt lists {name}, which is not a public Pages repository", file=sys.stderr)
+    rank = {name: i for i, name in enumerate(order)}
+    return sorted(repos, key=lambda r: (rank.get(r["name"], len(rank)), r["name"]))
+
+
 def card(repo):
     name = html.escape(repo["name"])
     url = html.escape(repo["homepage"] or f"https://{OWNER}.github.io/{repo['name']}/")
@@ -55,7 +66,7 @@ def main():
     parser.add_argument("--out", default="_site", type=Path)
     out = parser.parse_args().out
 
-    repos = pages_repos()
+    repos = ordered(pages_repos())
     if not repos:
         sys.exit("error: no public repositories with GitHub Pages found; refusing to publish an empty page")
 

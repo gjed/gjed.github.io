@@ -1,0 +1,4 @@
+# Order of the projects on the homepage, one repository name per line.
+# Pages projects not listed here follow, in alphabetical order.
+songbooks
+roadsurfer-rally-map

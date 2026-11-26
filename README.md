@@ -6,6 +6,8 @@ The homepage at [gjed.github.io](https://gjed.github.io/). It lists every public
 
 `build.py` reads the repositories from the GitHub API, keeps the public, non-fork, non-archived ones with Pages enabled, and renders them into `index.html`. Each card links to the repository's homepage URL, or to `https://gjed.github.io/<repo>/` when none is set.
 
+`projects.txt` sets the order: listed repositories come first, in that order, and Pages projects not listed follow alphabetically.
+
 Build locally:
 
 ```sh
