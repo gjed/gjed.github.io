@@ -37,9 +37,36 @@ header {
   margin: 0;
 }
 
+.about {
+  padding: var(--space-12) 0;
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: var(--space-12);
+}
+
+.about h1 {
+  margin: 0 0 var(--space-6);
+}
+
+.about p {
+  margin: 0 0 var(--space-4);
+}
+
+.work {
+  margin: var(--space-6) 0 0;
+  padding-left: var(--space-6);
+}
+
+.work li + li {
+  margin-top: var(--space-2);
+}
+
+main > h2 {
+  margin: 0 0 var(--space-2);
+}
+
 .lede {
   color: var(--ink-muted);
-  margin: var(--space-12) 0 var(--space-8);
+  margin: 0 0 var(--space-8);
 }
 
 a {
