@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>gjed</title>
-    <meta name="description" content="Projects gjed publishes on GitHub Pages.">
+    <meta name="description" content="Marco Pernigo: release engineering, CI and observability. Projects published on GitHub Pages.">
     <link rel="icon" href="assets/brand/favicon.svg" type="image/svg+xml">
     <link rel="icon" href="assets/brand/favicon-32.png" sizes="32x32">
     <link rel="apple-touch-icon" href="assets/brand/apple-touch-icon-180.png">
@@ -30,7 +30,29 @@
     </header>
     <hr class="horizon">
     <main>
-      <p class="body lede">Small, maintained tools I publish on GitHub Pages.</p>
+      <section class="about">
+        <h1 class="title">Marco Pernigo</h1>
+        <p class="body">I run release engineering, CI and observability for
+          <a href="https://github.com/zextras">Carbonio</a> at Zextras, and I keep a
+          homelab where I try things before they reach work.</p>
+        <p class="body">Most of what I build is small infrastructure tooling: GitHub
+          managed from YAML, OpenTelemetry exporters and Grafana dashboards. I keep it
+          maintained, tested and documented. When something upstream gets in the way, I
+          send the fix back: Grafana, the Grafana Tempo Helm chart, zot, Apache Camel and
+          awesome-prometheus-alerts have merged changes of mine.</p>
+        <ul class="body work">
+          <li><strong>Release engineering:</strong> packaging, Jenkins pipelines and
+            semantic-release for the Carbonio services.</li>
+          <li><strong>Observability:</strong> OpenTelemetry exporters and Grafana
+            dashboards for GitHub and Jenkins.</li>
+          <li><strong>GitHub as code:</strong> a Terraform module that manages a GitHub
+            organization from YAML.</li>
+          <li><strong>Homelab:</strong> Kubernetes with k3s and Flux, Proxmox and AWS
+            managed with OpenTofu, OPNsense.</li>
+        </ul>
+      </section>
+      <h2 class="h1">Projects</h2>
+      <p class="body lede">Tools I publish on GitHub Pages.</p>
       <ul class="projects">
 {{projects}}
       </ul>
